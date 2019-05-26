@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingRight="8dp"
+            android:scaleType="centerCrop"
+            android:scaleY="1"
+            android:src="@drawable/title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the Empire of Death..Set an optimal age of death to reap the soul and set the no. of times you are going to let the princess of Death guess the lifetime of the soul."
+            android:textColor="#18ffff"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set the age :"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:id="@+id/age"
+            android:textColor="#00e5ff"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/setage"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittextstyle"
+            android:hint="age"
+            android:inputType="numberPassword"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@id/age"
+            android:layout_marginLeft="16dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="280dp"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="How many guesses ?"
+    android:textAppearance="?android:textAppearanceLarge"
+    android:id="@+id/guess"
+    android:layout_gravity="center_horizontal"
+    android:textColor="#00e5ff"
+    android:textStyle="bold"
+    />
+    <EditText
+        android:id="@+id/setguess"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextstyle"
+        android:hint="No of guess"
+        android:inputType="number"
+        android:gravity="center_horizontal"
+        android:paddingVertical="10dp"
+        android:layout_marginLeft="10dp"
+        /></LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextstyle"
+        android:text="Set to guess"
+        android:layout_marginTop="15dp"
+        android:id="@+id/check"/>
+    </LinearLayout>
+</ScrollView>
